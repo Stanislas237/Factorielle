@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <h1>DÉNOMBREMENT !! </h1>
+        <h4>Ceci est un programme qui calcule la factorielle, l'arrangement et la combinaison. Ce sont des opérations indispensables au calcul des dénombrements et probabilités.</h4>
+        <form>
+            <div class="zone">
+                <div class="title">Factorielle</div>
+                <div class="desc">Entrez un nombre et vous aurez sa factorielle !</div>
+                <input type="number" id="fact">
+                <button id="facto" disabled>Calculer</button>
+                <div id="result-fact" class="result"></div>
+            </div>
+            <div class="zone">
+                <div class="title">Arrangement</div>
+                <div class="desc">Entrez les nombres et vous aurez leur arrangement !</div>
+                <div class="inputs">
+                    <input type="number" id="arran-a" placeholder="1er nombre...">
+                    <input type="number" id="arran-b" placeholder="2e nombre...">
+                </div>
+                <button id="arran" disabled>Calculer</button>
+                <div id="result-arran" class="result"></div>
+            </div>
+            <div class="zone">
+                <div class="title">Combinaison</div>
+                <div class="desc">Entrez les nombres et vous aurez leur combinaison !</div>
+                <div class="inputs">
+                    <input type="number" id="combi-a" placeholder="1er nombre...">
+                    <input type="number" id="combi-b" placeholder="2e nombre...">
+                </div>
+                <button id="combi" disabled>Calculer</button>
+                <div id="result-combi" class="result"></div>
+            </div>
+        </form>
+        <h3><u> By Stan.co </u></h3>
+    </body>
+</html>
