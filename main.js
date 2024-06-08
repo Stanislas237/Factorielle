@@ -18,17 +18,17 @@ function calcul(nombre){
     switch(nombre){
         case 1:
             let nb1 = document.querySelector("#fact").value
-            document.querySelector("#result-fact").innerHTML = fact(nb1)
+            document.querySelector("#result-fact").innerHTML = Math.round(fact(nb1))
         break
         case 2:
             let nb2 = document.querySelector("#arran-a").value
             let nb3 = document.querySelector("#arran-b").value
-            document.querySelector("#result-arran").innerHTML = arran(nb2, nb3)
+            document.querySelector("#result-arran").innerHTML = Math.round(arran(nb2, nb3))
         break
         case 3:
             let nb4 = document.querySelector("#combi-a").value
             let nb5 = document.querySelector("#combi-b").value
-            document.querySelector("#result-combi").innerHTML = combi(nb4, nb5)
+            document.querySelector("#result-combi").innerHTML = Math.round(combi(nb4, nb5))
         break
     }
 }
