@@ -15,10 +15,10 @@ h4{
 form{
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 .zone{
     min-height: 30vh;
-    max-width: 30%;
     padding: 1em;
     border-radius: 20px;
     border: 1px solid black;
@@ -76,4 +76,14 @@ button:enabled:hover{
 h3{
     text-align:end;
     color:red;
+}
+@media screen and (min-width:800px){
+    .zone{
+        max-width: 30%;
+    }
+}
+@media screen and (max-width:800px){
+    form{
+        flex-direction: column;
+    }
 }
