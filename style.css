@@ -120,7 +120,8 @@ h3{
 }
 img{
     height: 40px;
-    width: 5%;
+    width: 25%;
+    max-width: 100px;
     cursor: pointer;
     transition: all ease-in-out .2s;
     background: url(assets/light.png) center no-repeat;
