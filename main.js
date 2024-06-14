@@ -15,20 +15,24 @@ function combi(x, y) {
     return arr / fact(x);
 }
 function calcul(nombre){
+    let result
     switch(nombre){
         case 1:
             let nb1 = document.querySelector("#fact").value
-            document.querySelector("#result-fact").innerHTML = Math.round(fact(nb1))
+            result = fact(nb1)
+            document.querySelector("#result-fact").innerHTML = isNaN(result) ? result : Math.round(result)
         break
         case 2:
             let nb2 = document.querySelector("#arran-a").value
             let nb3 = document.querySelector("#arran-b").value
-            document.querySelector("#result-arran").innerHTML = Math.round(arran(nb2, nb3))
+            result = arran(nb2, nb3)
+            document.querySelector("#result-arran").innerHTML = isNaN(result) ? result : Math.round(result)
         break
         case 3:
             let nb4 = document.querySelector("#combi-a").value
             let nb5 = document.querySelector("#combi-b").value
-            document.querySelector("#result-combi").innerHTML = Math.round(combi(nb4, nb5))
+            result = combi(nb4, nb5)
+            document.querySelector("#result-combi").innerHTML = isNaN(result) ? result : Math.round(result)
         break
     }
 }
@@ -68,4 +72,10 @@ document.querySelector("#arran").addEventListener("click", (e)=>{
 document.querySelector("#combi").addEventListener("click", (e)=>{
     e.preventDefault()
     calcul(3)
+})
+let theme = ["dark", "light"]
+document.querySelector("img").addEventListener("click", (e)=>{
+    e.preventDefault()
+    document.body.id == theme[0] ? document.body.id = theme[1] : document.body.id = theme[0]
+    e.target.classList.toggle("dark")
 })

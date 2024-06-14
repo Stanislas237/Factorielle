@@ -5,14 +5,14 @@
         <link rel="stylesheet" href="style.css">
         <script src="main.js" defer></script>
     </head>
-    <body>
+    <body id="light">
         <h1>DÉNOMBREMENT !! </h1>
         <h4>Ceci est un programme qui calcule la factorielle, l'arrangement et la combinaison. Ce sont des opérations indispensables au calcul des dénombrements et probabilités.</h4>
         <form>
             <div class="zone">
                 <div class="title">Factorielle</div>
                 <div class="desc">Entrez un nombre et vous aurez sa factorielle !</div>
-                <input type="number" id="fact">
+                <input type="number" id="fact" placeholder="nombre...">
                 <button id="facto" disabled>Calculer</button>
                 <div id="result-fact" class="result"></div>
             </div>
@@ -37,6 +37,7 @@
                 <div id="result-combi" class="result"></div>
             </div>
         </form>
-        <h3><u> By Stan.co </u></h3>
+        <h3><u> By Stan.co </u></h3><br>
+        <div style="display: flex; justify-content:end;"><img alt=""></div>
     </body>
 </html>
