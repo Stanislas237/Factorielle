@@ -73,9 +73,16 @@ document.querySelector("#combi").addEventListener("click", (e)=>{
     e.preventDefault()
     calcul(3)
 })
+
+
+//************************************** THEMES ****************************************************
+if(!localStorage.hasOwnProperty("theme")) localStorage.setItem("theme", "light")
 let theme = ["dark", "light"]
+document.body.id = localStorage.getItem("theme")
+document.querySelector("img").id = document.body.id.charAt(0)
 document.querySelector("img").addEventListener("click", (e)=>{
     e.preventDefault()
     document.body.id == theme[0] ? document.body.id = theme[1] : document.body.id = theme[0]
-    e.target.classList.toggle("dark")
+    localStorage.setItem("theme", document.body.id)
+    e.target.id = document.body.id.charAt(0)
 })

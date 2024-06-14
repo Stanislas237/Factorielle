@@ -126,7 +126,7 @@ img{
     background: url(assets/light.png) center no-repeat;
     background-size: 100% 80%;
 }
-.dark{
+#d{
     background: url(assets/dark.png) center no-repeat;
     background-size: 100% 80%;
 }
