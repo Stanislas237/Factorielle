@@ -76,13 +76,13 @@ document.querySelector("#combi").addEventListener("click", (e)=>{
 
 
 //************************************** THEMES ****************************************************
-if(!localStorage.hasOwnProperty("theme")) localStorage.setItem("theme", "light")
+if(!localStorage.hasOwnProperty("theme_factorielle")) localStorage.setItem("theme_factorielle", "light")
 let theme = ["dark", "light"]
-document.body.id = localStorage.getItem("theme")
+document.body.id = localStorage.getItem("theme_factorielle")
 document.querySelector("img").id = document.body.id.charAt(0)
 document.querySelector("img").addEventListener("click", (e)=>{
     e.preventDefault()
     document.body.id == theme[0] ? document.body.id = theme[1] : document.body.id = theme[0]
-    localStorage.setItem("theme", document.body.id)
+    localStorage.setItem("theme_factorielle", document.body.id)
     e.target.id = document.body.id.charAt(0)
 })
